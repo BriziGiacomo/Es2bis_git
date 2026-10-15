@@ -7,12 +7,14 @@ if __name__== "__main__":
     pln4={"codice":"ESTEBAN", "modello":"stuka-B1", "ore_volo": 239, "controlli_ok":True}
     pln5={"codice":"ROGER", "modello":"F-11", "ore_volo": 1233, "controlli_ok":False}
     pln6={"codice":"NI--A", "modello":"L-115", "ore_volo": 766, "controlli_ok":True}
+    
     planes.append(pln1)
     planes.append(pln2)
     planes.append(pln3)
     planes.append(pln4)
     planes.append(pln5)
     planes.append(pln6)
+    
     print("Riepilogo dati aerei:")
     for pl in planes:
-        print("codice: "+pl["codice"]+", modello: "+ pl["modello"] +", ore volo: "+str(pl["ore_volo"])+", controlli validi: "+str(pl["controlli_ok"]))
+        print("{codice: "+pl["codice"]+", modello: "+ pl["modello"] +", ore volo: "+str(pl["ore_volo"])+", controlli validi: "+str(pl["controlli_ok"])+"}")
